@@ -1,0 +1,20 @@
+<p>This is the index page.</p>
+<p>Written by {{ author }}.</p>
+
+<p>Search for a Pokemon:</p>
+<input name="pokemon" id="pokemon" placeholder="Search Pokemon">
+<button id="search" onclick="submit_search()">Search</button>
+
+{{ pokemon }}
+
+<script>
+    function submit_search() {
+        document.cookie = "searched_pokemon" + "=" + document.getElementById("pokemon").value;
+        location.reload();
+    }
+    window.onload = function() {
+        document.getElementById("search").onclick = function fun() {
+            submit_search();
+        }
+    }
+</script>
