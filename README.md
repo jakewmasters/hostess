@@ -9,6 +9,8 @@ The webserver just uses `socket` and the template rendering engine is inspired b
 ## Why did I write it?
 I wrote this because I strongly dislike using gigantic pieces of software whose codebase I don't understand when I can make something simple instead. 
 
+![relevant meme I made](webserver-meme.PNG)
+
 This project is based off of a variation I wrote for an industry project. That version made use of REST API calls to provide data and was served from a Docker container. 
 
 Rather than taking the time to learn how to configure Nginx to work for the specific use case I needed it to work for, I decided to learn more about HTTP and write my own solution. 
